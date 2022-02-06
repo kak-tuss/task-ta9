@@ -1,0 +1,51 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+    <symbol id="find" viewBox="0 0 30 30">
+        <g transform="rotate(12 2.402 22.858)" fill="none" stroke="#cbcbcb" stroke-linecap="round" stroke-width="3">
+            <circle cx="11.555" cy="11.555" r="11.555" stroke="none"/>
+            <circle cx="11.555" cy="11.555" r="10.055"/>
+        </g>
+        <path fill="none" stroke="#cbcbcb" stroke-linecap="round" stroke-width="3.001" d="m25.957 26.584-4.606-4.856"/>
+    </symbol>
+
+    <symbol id="fs" viewBox="0 0 27 27">
+        <g transform="rotate(12 2.402 22.858)" fill="none" stroke="#cbcbcb" stroke-linecap="round" stroke-width="3">
+            <circle cx="11.555" cy="11.555" r="11.555" stroke="none"/>
+            <circle cx="11.555" cy="11.555" r="10.055"/>
+        </g>
+    </symbol>
+
+    <symbol id="list" viewBox="0 0 24 22">
+        <path d="M0 0h24v4H0z"/>
+        <path d="M0 18h24v4H0z"/>
+        <path d="M0 9h24v4H0z"/>
+    </symbol>
+
+    <symbol id="new" viewBox="0 0 60 60">
+        <defs>
+            <filter id="a" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+                <feOffset dy="3"/>
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feFlood flood-opacity=".161"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+            </filter>
+        </defs>
+        <g data-name="Create New">
+            <g filter="url(#a)">
+                <path data-name="Path 1114" d="M30 6A21 21 0 1 1 9 27 21 21 0 0 1 30 6z" fill="#749aac"/>
+            </g>
+            <path data-name="Rectangle 524" fill="#fff" d="M27 16h6v22h-6z"/>
+            <path data-name="Rectangle 525" fill="#fff" d="M19 30v-6h22v6z"/>
+        </g>
+    </symbol>
+
+    <symbol id="thumbs" viewBox="0 0 24 22">
+    <rect width="11" height="10" transform="translate(13 12)"/>
+    <rect width="11" height="10" transform="translate(13)"/>
+    <rect width="11" height="10" transform="translate(0 12)" />
+    <rect width="11" height="10"/>
+    </symbol>
+
+</defs>
+</svg>

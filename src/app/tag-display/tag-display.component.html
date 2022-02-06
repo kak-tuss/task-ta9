@@ -1,0 +1,39 @@
+<form>
+    <input type="text" placeholder="URL" class="search-box" /> <button class="search-btn">Go</button>
+
+    <div class="actions">
+        <button class="svg add-new">
+            <svg>
+                <use xlink:href="../../assets/svg/sprite.svg#new" />
+            </svg>
+        </button>
+        <button class="svg list" 
+                [ngClass]="pageState === pageStateEnum.List ? 'active' : ''" 
+                (click)="switchState(pageStateEnum.List, $event)">
+            <svg>
+                <use xlink:href="../../assets/svg/sprite.svg#list" />
+            </svg>
+        </button>
+        <button class="svg thumbs" 
+                [ngClass]="pageState === pageStateEnum.Thumbs ? 'active' : ''" 
+                (click)="switchState(pageStateEnum.Thumbs, $event)">
+            <svg>
+                <use xlink:href="../../assets/svg/sprite.svg#thumbs" />
+            </svg>
+        </button>
+    </div>
+
+    <h5>Management Tool</h5> 
+
+    <input type="text" placeholder="Find by name..." 
+            class="filter-box" 
+            name="search" 
+            [(ngModel)]="search" 
+            (keyup)="filterTags()"/>
+
+</form>
+
+<app-tag-display-list *ngIf="pageState === pageStateEnum.List" [tags]="tags$ | async "></app-tag-display-list>
+
+<app-tag-display-thumb *ngIf="pageState === pageStateEnum.Thumbs" [tags]="tags$ | async"></app-tag-display-thumb>
+

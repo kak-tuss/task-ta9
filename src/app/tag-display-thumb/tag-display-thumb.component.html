@@ -1,0 +1,11 @@
+<ul *ngIf="tags.length > 0">
+    <li *ngFor="let tag of tags">
+        <div class="color-thumb" [ngStyle]="{'background-color': tag.color}"></div>
+        <h6>{{tag.title}}</h6>
+    </li>    
+</ul>
+<div *ngIf="tags.length === 0">
+    Empty state thumbs
+</div>
+
+    
